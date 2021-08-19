@@ -30,7 +30,7 @@ train_data= pd.read_csv("D:/arg_assignments/Project_ml/Train.csv", nrows=1000000
 # In[3]:
 
 
-train_data
+
 
 
 # In[4]:
@@ -42,7 +42,7 @@ train_data.drop(columns=["Id"],axis=1,inplace=True)
 # In[5]:
 
 
-train_data
+
 
 
 # In[6]:
@@ -72,7 +72,6 @@ train_data["Count_tags"]=train_data.Tags.apply(lambda x:len(str(x).split()))
 # In[10]:
 
 
-train_data
 
 
 # In[10]:
@@ -254,8 +253,6 @@ train_data["words_body_post"]=(words_body_post-min(words_body_post))/(max(words_
 
 # In[28]:
 
-
-train_data.head()
 
 
 # In[29]:
